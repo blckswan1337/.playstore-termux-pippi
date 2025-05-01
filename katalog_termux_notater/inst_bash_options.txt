@@ -1,0 +1,105 @@
+Setting up bash (5.2.37-2) ...
+
+Configuration file '/data/data/com.termux/files/usr/etc/bash.bashrc'
+ ==> File on system created by you or by a script.
+ ==> File also in package provided by package maintainer.
+   What would you like to do about it ?  Your options are:
+    Y or I  : install the package maintainer's version
+    N or O  : keep your currently-installed version
+      D     : show the differences between the versions
+      Z     : start a shell to examine the situation
+ The default action is to keep your current version.
+*** bash.bashrc (Y/I/N/O/D/Z) [default=N] ? d
+--- /data/data/com.termux/files/usr/etc/bash.bashrc     2025-05-01 23:45:22.103999457 +0200
++++ /data/data/com.termux/files/usr/etc/bash.bashrc.dpkg-new    2025-02-27 22:23:46.000000000 +0100
+@@ -12,7 +12,9 @@
+
+ # Default command line prompt.
+ PROMPT_DIRTRIM=2
+-PS1='\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]$\[\e[0m\] '
++# Test if PS1 is set to the upstream default value, and if so overwrite it with our default.
++# This allows users to override \[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]\$\[\e[0m\]  by passing it to the invocation of bash as an environment varia>
++[[ \[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]\$\[\e[0m\]  == '\s-\v$ ' ]] && PS1='\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]$\[\e[0m\] '
+
+ # Handles nonexistent commands.
+ # If user has entered command which invokes non-available
+...skipping...
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+--- /data/data/com.termux/files/usr/etc/bash.bashrc     2025-05-01 23:45:22.103999457 +0200
++++ /data/data/com.termux/files/usr/etc/bash.bashrc.dpkg-new    2025-02-27 22:23:46.000000000 +0100
+@@ -12,7 +12,9 @@
+
+ # Default command line prompt.
+ PROMPT_DIRTRIM=2
+-PS1='\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]$\[\e[0m\] '
++# Test if PS1 is set to the upstream default value, and if so overwrite it with our defau--- /data/data/com.termux/files/usr/etc/bash.bashrc     2025-05-01 23:45:22.103999457 +0200
+          +++ /data/data/com.termux/files/usr/etc/bash.bashrc.dpkg-new    2025-02-27 22:23:46.000000000 +0100
+@@ -12,7 +12,9 @@
+
+ # Default command line prompt.
+ PROMPT_DIRTRIM=2
+-PS1='\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]$\[\e[0m\] '
+--- /data/data/com.termux/files/usr/etc/bash.bashrc     2025-05-01 23:45:22.103999457 +0200
++++ /data/data/com.termux/files/usr/etc/bash.bashrc.dpkg-new    2025-02-27 22:23:46.000000000 +0100
+@@ -12,7 +12,9 @@
+ # Default command line prompt.
+ PROMPT_DIRTRIM=2
+-PS1='\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]$\[\e[0m\] '
++# Test if PS1 is set to the upstream default value, and if so ov--- /data/data/com.termux/files/usr/etc/bash.bashrc     2025-05-01 23:45:22.103999457 +0200                                       +++ /data/data/com.termux/files/usr/etc/bash.bashrc.dpkg-new    2025-02-27 22:23:46.000000000 +0100                               @@ -12,7 +12,9 @@
+--- /data/data/com.termux/files/usr/etc/bash.bashrc     2025-05-01 23:45:22.103999457 +0200
++++ /data/data/com.termux/files/usr/etc/bash.bashrc.dpkg-new    2025-02-27 22:23:46.000000000 +0100                                                                                 @@ -12,7 +12,9 @@                                                                                                                                                                    # Default command line prompt.
+ PROMPT_DIRTRIM=2
+-PS1='\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]$\[\e[0m\] '                                   +# Test if PS1 is set to the upstream default value, and if so overwrite it with our default.                                                                                       +# This allows users to override \[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]\$\[\e[0m\]  by passing it to the invocation of bash as an environment varia>
++[[ \[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]\$\[\e[0m\]  == '\s-\v$ ' ]] && PS1='\[\e[0;32m\]\w\[\e[0m\] \[\e[0;97m\]$\[\e[0m\] '
+
+ # Handles nonexistent commands.
+ # If user has entered command which invokes non-available
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+lines 1-13/13 (END)
