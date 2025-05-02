@@ -1,0 +1,17 @@
+ls
+file macro.apk 
+ln -s macro.apk micro.zip
+ls
+unzip micro.zip 
+7zz e micro.zip 
+ls
+apt install bulk-extractor
+apt install bulkextractor
+find -name 'sources.list' ../../
+find -name 'sources.list' ../../ ;
+find -name 'sources.list' ../../;&
+find -name 'sources.list' ../
+find -name 'sources.list' ../ &;
+find -name 'sources.list' ../ && '
+
+
